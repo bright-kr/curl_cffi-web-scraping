@@ -1,6 +1,6 @@
 # Python에서 Web Scraping을 위해 curl\_cffi 사용하기
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
 
 이 가이드는 실제 브라우저의 TLS 핑거프린트를 모방하여 Python에서 Webスクレイピング 스크립트를 강화하기 위해 curl\_cffi를 사용하는 방법을 설명합니다.
 
@@ -51,11 +51,11 @@ HTTPS リクエスト를 전송하면 [TLS 핸드셰이크](https://www.cloudfla
 
 Walmart의 “Keyboard” 페이지를 スクレイピング해 보겠습니다:  
 
-![The Walmart “Keyboard” product page](https://github.com/luminati-io/curl_cffi-web-scraping/blob/main/Images/s_5A13EDF6E0EA32867C0C89DFE864B4C8FA81CE91CC8CE80729F465B232BE7073_1737992236291_image.png)
+![The Walmart “Keyboard” product page](https://github.com/bright-kr/curl_cffi-web-scraping/blob/main/Images/s_5A13EDF6E0EA32867C0C89DFE864B4C8FA81CE91CC8CE80729F465B232BE7073_1737992236291_image.png)
 
 어떤 HTTP 클라이언트를 사용하든 이 페이지에 접근을 시도하면, 다음과 같은 에러 페이지를 받게 됩니다:  
 
-![Note the response from the server](https://github.com/luminati-io/curl_cffi-web-scraping/blob/main/Images/s_5A13EDF6E0EA32867C0C89DFE864B4C8FA81CE91CC8CE80729F465B232BE7073_1737992185267_image.png)
+![Note the response from the server](https://github.com/bright-kr/curl_cffi-web-scraping/blob/main/Images/s_5A13EDF6E0EA32867C0C89DFE864B4C8FA81CE91CC8CE80729F465B232BE7073_1737992185267_image.png)
 
 TLS 핑거프린팅 때문에 실제 브라우저를 시뮬레이션하도록 `User-Agent`를 설정하더라도 이 봇 탐지 페이지가 표시됩니다. 이때 `curl_cffi`가 유용합니다.
 
